@@ -11,12 +11,6 @@
 }
 
 
-.dropDownButton{
-  gap:20px;
-  display:flex;
-  flex-direction: column;
-  width:80px;
-}
 
 
 
@@ -41,7 +35,6 @@
 }
 
 .menuButtons{
-  max-width: fit-content;
   margin-top:0.9rem;
   padding:0.3rem;
   font-weight:bold;

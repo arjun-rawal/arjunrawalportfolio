@@ -11,45 +11,28 @@ import { useState } from 'react';
 
 export default function Home() {
 
-  const [isShown, setIsShown] = useState(false);
 
 
   return (
     
     <body className={styles.everything}>
-  <main className={styles.main}>
-
-    <div className={styles.menuDiv}>
-
-      <div className={styles.menuBar}>
-
-      <Link href="/contact" className={styles.menuButtons}>
-          Contact
-      </Link>
-      <div onMouseLeave={()=> setIsShown(false)} onMouseEnter={() => setIsShown(true)} className={styles.dropDownButton}>
-        <a onClick={()=>setIsShown(!isShown)} className={styles.menuButtons}>       
+    <main className={styles.main}>
+      <div className={styles.menuDiv}>
+        <div className={styles.menuBar}>
+        <Link href="/contact" className={styles.menuButtons}>
+            Contact
+        </Link>
+        <Link href="/projects" className={styles.menuButtons}>       
             Projects
-        </a>
-        {isShown && (
-          <>
-        <Link href="" className={styles.menuButtons} >
-          Businesses
         </Link>
-        <Link href="" className={styles.menuButtons} >
-          Computer Science
+        <Link href="/aboutMe" className={styles.menuButtons}>
+            About Me
         </Link>
-        </>
-        )}
+        <Link href="/" className={styles.menuButtons}>
+            Home 
+        </Link>
+        </div>
       </div>
-      <Link href="/aboutMe" className={styles.menuButtons}>
-          About Me
-      </Link>
-      <Link href="/" className={styles.menuButtons}>
-          Home 
-      </Link>
-
-      </div>
-    </div>
       <div className={styles.texts}>
         <div className={styles.description}>
           <h1 className={styles.name}>
