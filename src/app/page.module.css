@@ -12,7 +12,12 @@
 
 
 
-
+.imageHeader{
+  padding-top: 5.2rem;
+  display:flex;
+  flex-direction:row;
+  gap: 0.4rem;
+}
 
 .texts{
   display: flex;
@@ -40,17 +45,18 @@
   font-weight:bold;
   color:black;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius:8px;
   font-size:1.2rem;
 }
 
 .menuButtons:hover{
   background-color: rgb(215, 215, 177);
-  border-radius:8px;
 }
 .headline{
   font-size:1.35rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left:12%;
+  display:block;
 }
 .menuDiv{
   height:73px;
@@ -82,7 +88,6 @@
   justify-content: space-between;
   font-size: 0.85rem;
   max-width: var(--max-width);
-  width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
 }

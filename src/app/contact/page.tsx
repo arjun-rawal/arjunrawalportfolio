@@ -12,7 +12,7 @@ export default function Home() {
   <main className={styles.main}>
     <div className={styles.menuDiv}>
       <div className={styles.menuBar}>
-      <Link href="/contact" className={styles.menuButtons}>
+      <Link href="/contact" style={{['backgroundColor']:'rgb(215, 215, 177)'}} className={styles.menuButtons}>
           Contact
       </Link>
       <Link href="/projects" className={styles.menuButtons}>       

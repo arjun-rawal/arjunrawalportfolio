@@ -15,7 +15,7 @@ export default function Home() {
       <Link href="/contact" className={styles.menuButtons}>
           Contact
       </Link>
-      <Link href="/projects" className={styles.menuButtons}>       
+      <Link href="/projects" style={{['backgroundColor']:'rgb(215, 215, 177)'}} className={styles.menuButtons}>       
           Projects
       </Link>
       <Link href="/aboutMe" className={styles.menuButtons}>

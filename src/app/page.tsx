@@ -7,13 +7,12 @@ import '../app/globals.css';
 import bg from '../assets/patternBackground.png'
 import Link from 'next/link'
 import { useState } from 'react';
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 export default function Home() {
 
-  const { scrollYProgress } = useViewportScroll()
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+
 
   return (
     
@@ -32,18 +31,18 @@ export default function Home() {
         <Link href="/aboutMe" className={styles.menuButtons}>
             About Me
         </Link>
-        <Link href="/" className={styles.menuButtons}>
+        <Link href="/" style={{['backgroundColor']:'rgb(215, 215, 177)'}} className={styles.menuButtons}>
             Home 
         </Link>
         </motion.div>
       </div>
       <div className={styles.texts}>
         <div className={styles.description}>
-        <motion.div initial="hidden" animate="visible" variants={{hidden: {scale: 0.2,opacity: 0},visible: {scale: 1,opacity: 1,transition: {delay: 0.5}},}}>
+        {/* <motion.div initial="hidden" animate="visible" variants={{hidden: {scale: 0.2,opacity: 0},visible: {scale: 1,opacity: 1,transition: {delay: 0.5}},}}> */}
           <h1 className={styles.name}>
             Arjun Rawal
           </h1>
-          </motion.div>
+          {/* </motion.div> */}
           <motion.div initial="hidden" animate="visible" variants={{hidden: {scale: 0.2,opacity: 0},visible: {scale: 1,opacity: 1,transition: {delay: 1}},}}>
             <h3 className={styles.headline}>
               Passion for Computer Science and Education
